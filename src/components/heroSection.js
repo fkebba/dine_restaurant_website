@@ -9,7 +9,7 @@ export function Hero() {
       <div class="absolute top-0 left-0 lg:w-[545px] lg:max-w-[600px] w-full bottom-0 bg-black"></div>
       <div class="lg:max-w-5xl mx-auto">
         <div class="relative lg:mb-26 px-35 md:px-70 lg:px-0 ml-auto ">
-          <img src="/public/images/logo.svg" alt="Logo" />
+          <img src="/images/logo.svg" alt="Logo" />
         </div>
       </div>
       <div class="relative lg:max-w-5xl text-center lg:text-left mr-auto lg:mx-auto">

@@ -4,9 +4,9 @@ export function CountrysideSection() {
   <img src="/public/images/patterns/pattern-curve-top-right.svg" class="absolute hidden md:block bottom-0 top-5/24 left-0 md:w-94 lg:w-202 h-64" />
    <div class="flex flex-col lg:flex-row md:max-w-5xl justify-between mx-auto relative">
       <div class="relative lg:max-w-md">
-      <img src="/public/images/homepage/enjoyable-place-desktop.jpg" alt="Countryside" class="relative hidden lg:block shadow  ml-auto object-cover -translate-y-1/12" />
-       <img id="event-image" src="/public/images/homepage/enjoyable-place-tablet.jpg" alt="Family dining" class="relative hidden md:block lg:hidden mx-auto shadow-2xl -translate-y-5/18" />
-         <img id="event-image" src="/public/images/homepage/enjoyable-place-mobile.jpg" alt="Family dining" class="relative md:hidden shadow-2xl mx-auto -translate-y-5/24 w-full" />
+      <img src="/images/homepage/enjoyable-place-desktop.jpg" alt="Countryside" class="relative hidden lg:block shadow  ml-auto object-cover -translate-y-1/12" />
+       <img id="event-image" src="/images/homepage/enjoyable-place-tablet.jpg" alt="Family dining" class="relative hidden md:block lg:hidden mx-auto shadow-2xl -translate-y-5/18" />
+         <img id="event-image" src="/images/homepage/enjoyable-place-mobile.jpg" alt="Family dining" class="relative md:hidden shadow-2xl mx-auto -translate-y-5/24 w-full" />
        </div>
       <div class="relative flex flex-col justify-center md:px-24 lg:px-0 lg:max-w-md lg:mx-0 text-center lg:text-left mb-14 lg:mb-0">
         <img src="/public/images/patterns/pattern-divide.svg" class="w-20 mx-auto lg:mx-0 mb-10" />
