@@ -42,11 +42,13 @@ eventButtons.forEach(button => {
   button.addEventListener('click', () => {
     
     eventButtons.forEach(btn => {
-      btn.classList.remove('font-medium');
+      btn.classList.remove('font-medium','text-black');
       btn.classList.add('text-gray-400');
+
     });
     button.classList.remove('text-gray-400');
-    button.classList.add('font-medium');
+    button.classList.add('font-medium','text-black');
+    
     
     
     const eventTitle = document.getElementById('event-title');
