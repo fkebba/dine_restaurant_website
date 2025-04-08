@@ -1,14 +1,14 @@
 export function familyGathering() {
   return `
-  <img src="/public/images/patterns/pattern-curve-top-right.svg" class="absolute w-114 h-64 hidden sm:block" />
+  <img src="/images/patterns/pattern-curve-top-right.svg" class="absolute w-114 h-64 hidden sm:block" />
   <div class="relative py-24 md:py-34 md:px-16 lg:px-0 px-6">
       <div class="flex flex-col lg:max-w-5xl mx-auto justify-between lg:flex-row">
         <div class="relative lg:max-w-md mb-8 md:mb-0">
-         <img id="event-desktop-image" src="/public/images/homepage/family-gathering-desktop.jpg" alt="Family dining" class=" hidden lg:block shadow-2xl" >
-         <img id="event-tablet-image" src="/public/images/homepage/family-gathering-tablet.jpg" alt="Family dining" class="hidden md:block mb-6 lg:hidden mx-auto   shadow-2xl" >
-          <img id="event-mobile-image" src="/public/images/homepage/family-gathering-mobile.jpg" alt="Family dining" class="md:hidden mx-auto w-full shadow-2xl" >
-         <img src="/public/images/patterns/pattern-lines.svg" class="absolute -top-10 bottom-0 -left-12 hidden sm:block" />
-        <img src="/public/images/patterns/pattern-divide.svg" class="absolute w-34 left-9/10 top-9/13 hidden lg:block" />
+         <img id="event-desktop-image" src="/images/homepage/family-gathering-desktop.jpg" alt="Family dining" class=" hidden lg:block shadow-2xl" >
+         <img id="event-tablet-image" src="/images/homepage/family-gathering-tablet.jpg" alt="Family dining" class="hidden md:block mb-6 lg:hidden mx-auto   shadow-2xl" >
+          <img id="event-mobile-image" src="/images/homepage/family-gathering-mobile.jpg" alt="Family dining" class="md:hidden mx-auto w-full shadow-2xl" >
+         <img src="/images/patterns/pattern-lines.svg" class="absolute -top-10 bottom-0 -left-12 hidden sm:block" />
+        <img src="/images/patterns/pattern-divide.svg" class="absolute w-34 left-9/10 top-9/13 hidden lg:block" />
         </div>
         <div class="lg:max-w-md flex lg:flex-col flex-col-reverse justify-center pl-0 text-center lg:text-left">
         <div class="md:px-20 lg:px-0 md:mt-10 lg:mt-0">

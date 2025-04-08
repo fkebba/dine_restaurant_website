@@ -10,7 +10,7 @@ export function footerSection() {
     <div class="py-8 px-8">
       <div class="max-w-5xl mx-auto flex flex-col lg:justify-between md:space-x-40  md:flex-row items-center  md:items-start  space-y-8 md:space-y-0">
   <div>
-   <a href="/index.html"> <img src="/public/images/logo.svg" class="mb-8  cursor-pointer"/></a>
+   <a href="/index.html"> <img src="/images/logo.svg" class="mb-8  cursor-pointer"/></a>
   </div>
   <div class="lg:flex md:space-y-10 lg:space-x-40 text-gray-400">
    <div class="text-center font-league md:text-left">
