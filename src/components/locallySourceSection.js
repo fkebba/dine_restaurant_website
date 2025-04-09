@@ -10,7 +10,7 @@ export function locallSourceSection() {
       <div class="relative lg:max-w-md mb-12 lg:mb-0">
       <img src="/images/homepage/locally-sourced-desktop.jpg" alt="Countryside" class="relative hidden lg:block shadow  ml-auto object-cover translate-y-1/12" />
       <img id="event-image" src="/images/homepage/locally-sourced-tablet.jpg" alt="Family dining" class="relative hidden md:block lg:hidden mx-auto mt-12   shadow-2xl" />
-            <img id="event-image" src="/public/images/homepage/locally-sourced-mobile.jpg" alt="Family dining" class="md:hidden w-full shadow-2xl mx-auto"/>
+            <img id="event-image" src="/images/homepage/locally-sourced-mobile.jpg" alt="Family dining" class="md:hidden w-full shadow-2xl mx-auto"/>
         <img src="/images/patterns/pattern-lines.svg" class="absolute lg:-right-30 md:-right-6 top-5/11 hidden md:block" />
       </div>
     </div>
