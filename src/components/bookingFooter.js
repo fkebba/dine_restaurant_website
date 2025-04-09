@@ -5,7 +5,7 @@ export function bookingFooter() {
       <div class="flex flex-col items-center text-center md:text-left md:space-x-40 lg:space-x-0 md:flex-row lg:justify-between md:items-start">
         <div>
         <a href="/index.html">
-              <img src="/public/images/logo.svg" class="mb-8 cursor-pointer"/> 
+              <img src="/images/logo.svg" class="mb-8 cursor-pointer"/> 
           </a>
         </div>
         <div class="lg:flex lg:mr-[260px] lg:space-x-40 md:space-y-20 lg:space-y-0  ">
