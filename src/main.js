@@ -62,23 +62,23 @@ eventButtons.forEach(button => {
       case 'Family Gathering':
         eventTitle.textContent = 'Family Gathering';
         eventDescription.textContent = "We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We'll provide a memorable experience for all.";
-        eventDesktopImage.src = "/public/images/homepage/family-gathering-desktop.jpg";
-        eventTabletImage.src = "/public/images/homepage/family-gathering-tablet.jpg";
-        eventMobileImage.src = "/public/images/homepage/family-gathering-mobile.jpg";
+        eventDesktopImage.src = "/images/homepage/family-gathering-desktop.jpg";
+        eventTabletImage.src = "/images/homepage/family-gathering-tablet.jpg";
+        eventMobileImage.src = "/images/homepage/family-gathering-mobile.jpg";
         break;
       case 'Special Events':
         eventTitle.textContent = 'Special Events';
         eventDescription.textContent = "Whether it's a romantic dinner or special date you're celebrating, we'll look after you. We'll be sure to mark your special date with an unforgettable meal.";
-        eventDesktopImage.src = '/public/images/homepage/special-events-desktop.jpg';
-        eventTabletImage.src = "/public/images/homepage/special-events-tablet.jpg";
-        eventMobileImage.src = "/public/images/homepage/special-events-mobile.jpg";
+        eventDesktopImage.src = '/images/homepage/special-events-desktop.jpg';
+        eventTabletImage.src = "/images/homepage/special-events-tablet.jpg";
+        eventMobileImage.src = "/images/homepage/special-events-mobile.jpg";
         break;
       case 'Social Events':
         eventTitle.textContent = 'Social Events';
         eventDescription.textContent = "Are you looking to have a larger social event? No problem! We're experienced in hosting social gatherings. We'll work with you to make your event a night to remember.";
-        eventDesktopImage.src = '/public/images/homepage/social-events-desktop.jpg';
-        eventTabletImage.src = "/public/images/homepage/social-events-tablet.jpg";
-        eventMobileImage.src = "/public/images/homepage/social-events-mobile.jpg";
+        eventDesktopImage.src = '/images/homepage/social-events-desktop.jpg';
+        eventTabletImage.src = "/images/homepage/social-events-tablet.jpg";
+        eventMobileImage.src = "/images/homepage/social-events-mobile.jpg";
         break;
     }
   });
