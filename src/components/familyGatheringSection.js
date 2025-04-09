@@ -14,7 +14,7 @@ export function familyGathering() {
         <div class="md:px-20 lg:px-0 md:mt-10 lg:mt-0">
           <h2 id="event-title" class="text-3xl font-league text-[#242b37] md:text-[48px] tracking-[-0.5px] mb-4 font-bold">Family Gathering</h2>
           <p id="event-description" class="text-[#5c6779] font-league text-[20px] leading-[30px] mb-8">We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We'll provide a memorable experience.</p>
-          <button id="book-table-btn" class="bg-black cursor-pointer text-white  text-[16px] font-league tracking-widest py-4 px-16 md:px-12 inline-block mx-auto md:mx-0 w-max uppercase hover:bg-white hover:border-[1px] hover:text-black transition">Book a table</button>
+          <a href="/booking.html" class="bg-black cursor-pointer text-white  text-[16px] font-league tracking-widest py-4 px-16 md:px-12 inline-block mx-auto md:mx-0 w-max uppercase hover:bg-white hover:border-[1px] hover:text-black transition">Book a table</a>
         </div>
           <div class="mt-10 mb-10 md:mb-0 space-y-4 font-league font-medium text-[#5c6779] text-[17px] leading-[28px] tracking-[2.5px]">
             <button class="event-type lg:block w-full md:w-auto uppercase cursor-pointer  md:mr-8 lg:mr-4">Family Gathering</button>

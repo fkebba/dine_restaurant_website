@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   
   `
-  setupNavigation();
+  
 });
 
 
@@ -40,33 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   
-
-
-function setupNavigation() {
-  const bookButtons = document.querySelectorAll('#book-table-btn');
-  bookButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      window.location.hash = 'booking';
-    });
-  });
-
-  window.addEventListener('hashchange', handleRouting);
-  handleRouting();
-}
-
-function handleRouting() {
-  const hash = window.location.hash.replace('#', '') || 'home';
   
-  document.querySelectorAll('.page').forEach(page => {
-    page.style.display = 'none';
-  });
-  
-  const currentPage = document.getElementById(`${hash}-page`);
-  if (currentPage) {
-    currentPage.style.display = 'block';
-  }
-}
-
   
 const eventButtons = document.querySelectorAll('.event-type');
 eventButtons.forEach(button => {
@@ -245,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ${bookingFooter()}
   
   `
-  setupNavigation();
+
         initializeDatePicker();
         initializeTimePicker();
         initializePeopleCounter();
