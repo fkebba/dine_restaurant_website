@@ -6,7 +6,7 @@ export function CountrysideSection() {
       <div class="relative lg:max-w-md">
       <img src="/images/homepage/enjoyable-place-desktop.jpg" alt="Countryside" class="relative hidden lg:block shadow  ml-auto object-cover -translate-y-1/12" />
        <img id="event-image" src="/images/homepage/enjoyable-place-tablet.jpg" alt="Family dining" class="relative hidden md:block lg:hidden mx-auto shadow-2xl -translate-y-5/18" />
-         <img id="event-image" src="/images/homepage/enjoyable-place-mobile.jpg" alt="Family dining" class="relative md:hidden shadow-2xl mx-auto -translate-y-5/24 w-full" />
+         <img id="event-image" src="/images/homepage/enjoyable-place-mobile.jpg" alt="Family dining" class="relative md:hidden shadow-2xl mx-auto -translate-y-5/32 sm:-translate-y-5/24 w-full" />
        </div>
       <div class="relative flex flex-col justify-center md:px-24 lg:px-0 lg:max-w-md lg:mx-0 text-center lg:text-left mb-14 lg:mb-0">
         <img src="/images/patterns/pattern-divide.svg" class="w-20 mx-auto lg:mx-0 mb-10" />

@@ -18,7 +18,7 @@ export function menuHighlights() {
             </div>
             <div>
               <h3 class="font-medium font-league text-[20px] leading-[24px] -tracking-0.25 text-white pb-2">Seared Salmon Fillet</h3>
-              <p class="text-base font-league text-[16px] px-[38px] md:px-0 leading-[26px] text-gray-400">Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
+              <p class="text-base font-league text-[16px] px-[6px] sm:px-[38px] md:px-0 leading-[26px] text-gray-400">Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
             </div>
             </div>
             <div class="w-full h-px bg-gray-700 my-2 "></div>
@@ -33,7 +33,7 @@ export function menuHighlights() {
             </div>
             <div>
               <h3 class="font-medium font-league text-white text-[20px] leading-[24px] -tracking-0.25 pb-2">Rosemary Filet Mignon</h3>
-              <p class="text-[16px] px-[38px] md:px-0 leading-[26px] font-league  text-gray-400">Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
+              <p class="text-[16px] px:[6px] sm:px-[38px] md:px-0 leading-[26px] font-league  text-gray-400">Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
             </div>
           </div>
            <div class="w-full h-px bg-gray-700 my-2 "></div>
@@ -47,7 +47,7 @@ export function menuHighlights() {
             </div>
             <div>
               <h3 class="font-medium font-league text-white text-[20px] leading-[24px] -tracking-0.25 pb-2">Summer Fruit Chocolate Mousse</h3>
-              <p class="text-[16px] leading-[26px] px-[38px] md:px-0 font-league text-gray-400">A silky mousse combined with summer fruits and dark chocolate shavings.</p>
+              <p class="text-[16px] leading-[26px] px-[6px] sm:px-[38px] md:px-0 font-league text-gray-400">A silky mousse combined with summer fruits and dark chocolate shavings.</p>
             </div>
           </div>
         </div>
