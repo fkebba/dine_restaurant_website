@@ -1,7 +1,7 @@
 export function CountrysideSection() {
   return `
   <div class="relative px-6 md:px-18 lg:px-8 ">
-  <img src="/images/patterns/pattern-curve-top-right.svg" class="absolute hidden md:block bottom-0 top-5/24 left-0 md:w-94 lg:w-202 h-64" />
+  <img src="/images/patterns/pattern-curve-top-right.svg" class="absolute hidden md:block bottom-0 md:top-5/24 lg:top-5/13 left-0 md:w-94 lg:w-202 h-64" />
    <div class="flex flex-col lg:flex-row md:max-w-5xl justify-between mx-auto relative">
       <div class="relative lg:max-w-md">
       <img src="/images/homepage/enjoyable-place-desktop.jpg" alt="Countryside" class="relative hidden lg:block shadow  ml-auto object-cover -translate-y-1/12" />
