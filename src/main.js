@@ -36,6 +36,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const bookButtons = document.querySelectorAll('#book_table_button');
+    bookButtons.forEach(button => {
+      button.addEventListener('click', () => {
+      
+        window.location.hash = 'booking';
+      });
+    });
+  
+    
+    window.addEventListener('hashchange', handleRouting);
+    
+    
+    handleRouting();
+  });
+  
+  function handleRouting() {
+    const hash = window.location.hash.replace('#', '') || 'home';
+    
+    
+    document.querySelectorAll('.page').forEach(page => {
+      page.style.display = 'none';
+    });
+    
+    
+    const currentPage = document.getElementById(`${hash}-page`);
+    if (currentPage) {
+      currentPage.style.display = 'block';
+    }
+  }
+
   
 const eventButtons = document.querySelectorAll('.event-type');
 eventButtons.forEach(button => {

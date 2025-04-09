@@ -4,7 +4,7 @@ export function footerSection() {
     <div class="py-16 px-8 bg-cover bg-center bg-gray-700 bg-blend-overlay" style="background-image: url('/images/homepage/ready-bg-desktop.jpg');  ">
       <div class="max-w-5xl mx-auto flex flex-col lg:flex-row justify-between items-center">
         <h2 class="text-3xl font-league md:text-5xl mb-8 font-bold md:mb-0 text-center lg:text-left">Ready to make a reservation?</h2>
-        <a href="/booking.html" class="sm:border md:mt-8 lg:mt-0 sm:border-white text-[16px] px-12 py-4 lg:py-3 lg:px-6 inline-block uppercase tracking-widest font-medium hover:bg-white hover:text-black transition mx-auto md:mx-0 ">Book a table</a>
+        <button id="book-table-btn" class="sm:border md:mt-8 lg:mt-0 sm:border-white text-[16px] px-12 py-4 lg:py-3 lg:px-6 inline-block uppercase tracking-widest font-medium hover:bg-white hover:text-black transition mx-auto md:mx-0 ">Book a table</button>
       </div>
     </div>
     <div class="py-8 px-8">

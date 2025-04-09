@@ -21,8 +21,8 @@ export function Hero() {
             the freshest produce from the comfort of our farmhouse.
           </p>
 
-          <a href="/booking.html"  class="mt-10 inline-block border-2 sm:border-2 border-white sm:border-white font-league  text-[24px] md:text-[20px] tracking-widest hover:bg-white hover:text-black cursor-pointer px-12 py-4 md:px-10 md:py-4"
-            >Book a table</a
+          <button id="book-table-btn"  class="mt-10 inline-block border-2 sm:border-2 border-white sm:border-white font-league  text-[24px] md:text-[20px] tracking-widest hover:bg-white hover:text-black cursor-pointer px-12 py-4 md:px-10 md:py-4"
+            >Book a table</button
           >
         </div>
       </div>
