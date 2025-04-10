@@ -1,6 +1,6 @@
 export function form() {
     return `
-    <div class="absolute lg:top-5/9  mx-auto md:top-5/7 top-5/5 lg:bottom-0 lg:right-0 lg:left-5/10 px-6 md:px-28 lg:px-0  lg:max-w-1/2 w-full lg:pr-24  flex items-center justify-center p-8">
+    <div class="absolute lg:top-5/9 mx-auto sm:top-5/7 top-5/6 lg:bottom-0 lg:right-0 lg:left-5/10 px-6 md:px-28 lg:px-0  lg:max-w-1/2 w-full lg:pr-24  flex items-center justify-center p-8">
     <img src="/images/patterns/pattern-lines.svg" class="absolute hidden lg:block  -inset-12 top-97 shadow-2xl bottom-0" />
      <div class="relative w-full bg-white md:p-8 p-4 lg:mx-0  rounded shadow-2xl">
           <form id="reservation-form" class="space-y-6">
