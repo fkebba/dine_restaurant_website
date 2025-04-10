@@ -5,7 +5,7 @@ export function bookingHero() {
       <div class="absolute inset-0 ">
        <img src="/images/booking/hero-bg-desktop.jpg" alt="Food on plate" class="hidden lg:block">
        <img src="/images/booking/hero-bg-tablet.jpg" alt="Food on plate" class="hidden md:block lg:hidden">
-        <img src="/images/booking/hero-bg-mobile.jpg" alt="Food on plate" class="md:hidden">
+        <img src="/images/booking/hero-bg-mobile.jpg" alt="Food on plate" class="md:hidden w-full">
       </div>
       <div class="relative w-full min-h-[200px] md:min-h-[450px] lg:min-h-[550px]">
         <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
