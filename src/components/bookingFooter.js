@@ -1,6 +1,6 @@
 export function bookingFooter() {
   return `
-  <div class="bg-black text-white mt-40 sm:mt-50 md:mt-72 lg:mt-0 py-12">
+  <div class="bg-black text-white mt-30 sm:mt-30 lg:mt-0 py-12">
     <div class="container mx-auto px-4 md:px-12">
       <div class="flex flex-col items-center text-center md:text-left md:flex-row md:items-start">
         <div class="mb-8 md:mb-0 md:mr-12 lg:mr-24">
