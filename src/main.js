@@ -109,6 +109,8 @@ function setupHomeEventListeners() {
 }
 
 
+
+
 function initializeDatePicker() {
   const monthSelect = document.getElementById('month');
   const daySelect = document.getElementById('day');
@@ -198,33 +200,227 @@ function initializePeopleCounter() {
   });
 }
 
-function handleFormSubmission() {
-  const form = document.getElementById('reservation-form');
-  const successMessage = document.getElementById('success-message');
+
   
-  if (!form || !successMessage) return;
+      
+function initializeFormValidation() {
+  const form = document.getElementById('reservation-form');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const monthSelect = document.getElementById('month');
+  const daySelect = document.getElementById('day');
+  const yearSelect = document.getElementById('year');
+  const hourSelect = document.getElementById('hour');
+  const minuteSelect = document.getElementById('minute');
+  const ampmSelect = document.getElementById('ampm');
+  const peopleInput = document.getElementById('people');
+
+
+  
+  function showError(element, message) {
+    clearError(element);
+    
+    
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'text-red-500 text-sm mt-1 error-message';
+    errorDiv.textContent = message;
+    
+    element.classList.add('border-red-500');
+    if (element.parentNode.classList.contains('flex')) {
+      element.closest('.space-y-6 > div').appendChild(errorDiv);
+    } else {
+      element.parentNode.appendChild(errorDiv);
+    }
+  }
+  
+  function clearError(element) {
+    element.classList.remove('border-red-500');
+  
+    const container = element.parentNode.classList.contains('flex') 
+      ? element.closest('.space-y-6 > div')
+      : element.parentNode;
+    
+    const errorMessage = container.querySelector('.error-message');
+    if (errorMessage) {
+      errorMessage.remove();
+    }
+  }
+  
+  function validateDateFields() {
+    const dateContainer = monthSelect.closest('.space-y-6 > div');
+    
+    if (!monthSelect.value || !daySelect.value || !yearSelect.value) {
+      const errorMsg = document.createElement('div');
+      errorMsg.className = 'text-red-500 text-sm mt-2 error-message';
+      errorMsg.textContent = 'This field is required';
+      
+
+      const existingError = dateContainer.querySelector('.error-message');
+      if (existingError) existingError.remove();
+      
+      if (!monthSelect.value) monthSelect.classList.add('border-red-500');
+      if (!daySelect.value) daySelect.classList.add('border-red-500');
+      if (!yearSelect.value) yearSelect.classList.add('border-red-500');
+      
+      dateContainer.appendChild(errorMsg);
+      return false;
+    } else {
+      const selectedDate = new Date(
+        parseInt(yearSelect.value),
+        parseInt(monthSelect.value) - 1,
+        parseInt(daySelect.value)
+      );
+      
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      if (selectedDate < today) {
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'text-red-500 text-sm mt-2 error-message';
+        errorMsg.textContent = 'Please select a future date';
+        
+        const existingError = dateContainer.querySelector('.error-message');
+        if (existingError) existingError.remove();
+        
+        dateContainer.appendChild(errorMsg);
+        return false;
+      }
+      
+    
+      monthSelect.classList.remove('border-red-500');
+      daySelect.classList.remove('border-red-500');
+      yearSelect.classList.remove('border-red-500');
+      
+      const existingError = dateContainer.querySelector('.error-message');
+      if (existingError) existingError.remove();
+      
+      return true;
+    }
+  }
+  
+  
+  function validateTimeFields() {
+    const timeContainer = hourSelect.closest('.space-y-6 > div');
+    
+    if (!hourSelect.value || !minuteSelect.value) {
+      const errorMsg = document.createElement('div');
+      errorMsg.className = 'text-red-500 text-sm mt-2 error-message';
+      errorMsg.textContent = 'This field is required';
+      
+    
+      const existingError = timeContainer.querySelector('.error-message');
+      if (existingError) existingError.remove();
+      
+    
+      if (!hourSelect.value) hourSelect.classList.add('border-red-500');
+      if (!minuteSelect.value) minuteSelect.classList.add('border-red-500');
+      
+      timeContainer.appendChild(errorMsg);
+      return false;
+    } else {
+      
+      hourSelect.classList.remove('border-red-500');
+      minuteSelect.classList.remove('border-red-500');
+      
+      const existingError = timeContainer.querySelector('.error-message');
+      if (existingError) existingError.remove();
+      
+      return true;
+    }
+  }
+  
+
+  function validateName() {
+    if (!nameInput.value.trim()) {
+      showError(nameInput, 'This field is required');
+      return false;
+    } else {
+      clearError(nameInput);
+      return true;
+    }
+  }
+  
+  function validateEmail() {
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!email) {
+      showError(emailInput, 'This field is required');
+      return false;
+    } else if (!emailRegex.test(email)) {
+      showError(emailInput, 'Please provide a valid email address');
+      return false;
+    } else {
+      clearError(emailInput);
+      return true;
+    }
+  }
+  
+
+  nameInput.addEventListener('blur', validateName);
+  nameInput.addEventListener('input', () => {
+    if (nameInput.value.trim()) clearError(nameInput);
+  });
+  
+  emailInput.addEventListener('blur', validateEmail);
+  emailInput.addEventListener('input', () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailRegex.test(emailInput.value.trim())) clearError(emailInput);
+  });
+  
+  [monthSelect, daySelect, yearSelect].forEach(select => {
+    select.addEventListener('change', validateDateFields);
+    select.addEventListener('blur', validateDateFields);
+  });
+  
+  [hourSelect, minuteSelect].forEach(select => {
+    select.addEventListener('change', validateTimeFields);
+    select.addEventListener('blur', validateTimeFields);
+  });
   
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    const formData = new FormData(form);
-    const reservationData = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      date: `${formData.get('year')}-${formData.get('month')}-${formData.get('day')}`,
-      time: `${formData.get('hour')}:${formData.get('minute')} ${formData.get('ampm')}`,
-      people: formData.get('people')
-    };
-    console.log('Reservation data:', reservationData);
-     form.classList.add('hidden');
-    successMessage.classList.remove('hidden');
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+    const isDateValid = validateDateFields();
+    const isTimeValid = validateTimeFields();
     
-    setTimeout(() => {
-      form.reset();
-      form.classList.remove('hidden');
-      successMessage.classList.add('hidden'); 
-    }, 5000);
+    
+    if (isNameValid && isEmailValid && isDateValid && isTimeValid) {
+      
+      const formData = {
+        name: nameInput.value,
+        email: emailInput.value,
+        date: `${yearSelect.value}-${monthSelect.value}-${daySelect.value}`,
+        time: `${hourSelect.value}:${minuteSelect.value} ${ampmSelect.value}`,
+        people: peopleInput.value
+      };
+      
+      console.log('Reservation submitted:', formData);
+      
+      
+      form.classList.add('hidden');
+      const successMessage = document.getElementById('success-message');
+      successMessage.classList.remove('hidden');
+      
+    
+      setTimeout(() => {
+        form.reset();
+        form.classList.remove('hidden');
+        successMessage.classList.add('hidden');
+      }, 5000);
+    }
   });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.getElementById('reservation-form')) {
+    initializeFormValidation();
+  }
+});
+
+function handleFormSubmission() {
+  initializeFormValidation();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -232,3 +428,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   window.addEventListener('popstate', router);
 });
+
+
+
+
+
+

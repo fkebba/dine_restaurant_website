@@ -26,3 +26,14 @@
       width: 3.5rem; 
     }
   }
+
+.error-message {
+  color: #f56565;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+input.border-red-500,
+select.border-red-500 {
+  border-color: #f56565;
+}
