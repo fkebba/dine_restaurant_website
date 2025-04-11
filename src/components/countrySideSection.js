@@ -10,7 +10,7 @@ export function CountrysideSection() {
        </div>
       <div class="relative flex flex-col justify-center md:px-24 lg:px-0 lg:max-w-md lg:mx-0 text-center lg:text-left mb-14 lg:mb-0">
         <img src="/images/patterns/pattern-divide.svg" class="w-20 mx-auto lg:mx-0 mb-10" />
-        <h2 class="font-league text-[#242b37] sm:px-10 px-6 md:px-0  text-4xl -tracking-0.25 md:text-[48px] leading-[48px] md:-tracking-0.5  mb-4 font-bold md:leading-[48px]">Enjoyable place for all the family</h2>
+        <h2 class="text-[#242b37] font-league sm:px-10 px-4 md:px-0 -tracking-0.25 text-4xl md:text-[48px] md:-tracking-0.5  mb-6 font-bold leading-[48px]">Enjoyable place for all the family</h2>
         <p class="text-[#5c6779] font-league text-[20px] leading-[30px]  md:text-[20px] md:leading-[30px] font-normal mb-4">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
       </div>
       </div>

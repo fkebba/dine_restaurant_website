@@ -64,11 +64,16 @@ function setupHomeEventListeners() {
   eventButtons.forEach(button => {
     button.addEventListener('click', () => {
       eventButtons.forEach(btn => {
-        btn.classList.remove('font-medium','text-black');
+        btn.classList.remove('short-border-bottom','font-bold','pb-2', 'mx-auto', 'w-fit');
         btn.classList.add('text-gray-400');
       });
       button.classList.remove('text-gray-400');
-      button.classList.add('font-medium','text-black');
+      button.classList.add('font-medium', 'text-black');
+      
+      if (window.innerWidth < 1024) {
+        button.classList.add('short-border-bottom', 'pb-2', 'mx-auto', 'w-fit');
+      }
+  
       
       const eventTitle = document.getElementById('event-title');
       const eventDescription = document.getElementById('event-description');

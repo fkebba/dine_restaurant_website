@@ -1,7 +1,7 @@
 export function form() {
   return `
   <div class="relative w-full mx-auto -mt-24 sm:mt-20 md:-mt-28 lg:absolute lg:top-5/9 lg:bottom-0 lg:right-0 lg:left-5/10 px-6 md:px-28 lg:px-0 lg:max-w-1/2 lg:pr-24 flex items-center justify-center">
-    <img src="/images/patterns/pattern-lines.svg" class="absolute hidden lg:block -inset-18 top-110 shadow-2xl bottom-0" />
+    <img src="/images/patterns/pattern-lines.svg" class="absolute hidden lg:block -inset-14 top-110 shadow-2xl bottom-0" />
     <div class="relative w-full bg-white md:p-8 p-4 lg:mx-0 rounded shadow-2xl">
       <form id="reservation-form" class="space-y-6">
         <div>
