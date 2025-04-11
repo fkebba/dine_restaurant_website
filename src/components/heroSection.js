@@ -11,9 +11,9 @@ export function Hero() {
       </div>
     </div>
     <div class="relative max-w-5xl text-center lg:text-left mx-auto">
-      <div class="text-white w-full max-w-lg mt-12 mx-auto lg:mx-0">
-        <h1 class="text-4xl leading-tight md:text-6xl lg:text-7xl font-light font-league">Exquisite dining since 1989</h1>
-        <p class="mt-6 text-base md:text-lg lg:text-[20px] leading-[30px] font-normal font-league max-w-md mx-auto lg:mx-0">
+      <div class="text-white max-w-sm md:max-w-lg mt-12 mx-auto lg:mx-0">
+        <h1 class="text-5xl leading-wide md:leading-[80px] md:text-[80px] md:-tracking-1 font-light font-league">Exquisite dining since 1989</h1>
+        <p class="mt-6  text-[16px] leading-[26px] md:text-[20px] md:leading-[30px] font-normal font-league max-w-md mx-auto lg:mx-0">
           Experience our seasonal menu in beautiful country surroundings. Eat
           the freshest produce from the comfort of our farmhouse.
         </p>

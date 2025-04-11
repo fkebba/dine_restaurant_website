@@ -6,31 +6,31 @@ export function form() {
       <form id="reservation-form" class="space-y-6">
         <div>
           <label for="name" class="sr-only font-league">Name</label>
-          <input type="text" id="name" name="name" placeholder="Name" required
+          <input type="text" id="name" name="name" placeholder="Name" 
             class="w-full px-4 py-3 border-b border-gray-300 focus:border-black focus:outline-none">
         </div>
         <div>
           <label for="email" class="sr-only font-league">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" required
+          <input type="email" id="email" name="email" placeholder="Email" 
             class="w-full px-4 py-3 border-b font-league border-gray-300 focus:border-black focus:outline-none">
         </div>
         <div>
           <label class="block text-gray-500 mb-2 font-league">Pick a date</label>
           <div class="flex flex-col sm:flex-row gap-4">
             <div class="flex-1">
-              <select id="month" name="month" required
+              <select id="month" name="month" 
                 class="w-full px-4 py-3 border-b font-league border-gray-300 focus:border-black focus:outline-none">
                 <option value="" disabled selected>MM</option>
               </select>
             </div>
             <div class="flex-1">
-              <select id="day" name="day" required
+              <select id="day" name="day" 
                 class="w-full px-4 py-3 border-b font-league border-gray-300 focus:border-black focus:outline-none">
                 <option value="" disabled selected>DD</option>
               </select>
             </div>
             <div class="flex-1">
-              <select id="year" name="year" required
+              <select id="year" name="year" 
                 class="w-full px-4 py-3 border-b font-league border-gray-300 focus:border-black focus:outline-none">
                 <option value="" disabled selected>YYYY</option>
               </select>
@@ -41,19 +41,19 @@ export function form() {
           <label class="block text-gray-500 mb-2 font-league">Pick a time</label>
           <div class="flex flex-col sm:flex-row gap-4">
             <div class="flex-1">
-              <select id="hour" name="hour" required
+              <select id="hour" name="hour" 
                 class="w-full px-4 py-3 border-b font-league border-gray-300 focus:border-black focus:outline-none">
                 <option value="" disabled selected>HH</option>
               </select>
             </div>
             <div class="flex-1">
-              <select id="minute" name="minute" required
+              <select id="minute" name="minute" 
                 class="w-full px-4 py-3 border-b border-gray-300 font-league focus:border-black focus:outline-none">
                 <option value="" disabled selected>MM</option>
               </select>
             </div>
             <div class="flex-1">
-              <select id="ampm" name="ampm" required
+              <select id="ampm" name="ampm" 
                 class="w-full px-4 py-3 border-b font-league border-gray-300 focus:border-black focus:outline-none">
                 <option value="AM">AM</option>
                 <option value="PM">PM</option>
