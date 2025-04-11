@@ -17,7 +17,7 @@ export function Hero() {
           Experience our seasonal menu in beautiful country surroundings. Eat
           the freshest produce from the comfort of our farmhouse.
         </p>
-         <a href="/booking.html" class="mt-8 md:mt-10 inline-block border-2 border-white font-league tracking-widest text-lg md:text-xl hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer px-8 py-3 md:px-10 md:py-4">
+         <a href="/booking.html" class="mt-8 md:mt-10 inline-block border-2 border-white font-league tracking-widest text-lg md:text-xl hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer px-12 py-4 md:px-10 md:py-4">
           Book a table
         </a>
       </div>
