@@ -3,9 +3,9 @@ export function bookingHero() {
   <div class="relative w-full">
     <div class="relative w-full">
       <div class="absolute inset-0">
-        <div class="hidden lg:block w-full h-full bg-cover bg-gray-700 bg-blend-overlay bg-center" style="background-image: url('/images/booking/hero-bg-desktop.jpg')"></div>
-        <div class="hidden md:block lg:hidden w-full h-full bg-cover bg-gray-700 bg-blend-overlay bg-center" style="background-image: url('/images/booking/hero-bg-tablet.jpg')"></div>
-        <div class="md:hidden w-full h-full bg-cover bg-gray-700 bg-blend-overlay bg-center" style="background-image: url('/images/booking/hero-bg-mobile.jpg')"></div>
+        <div class="hidden lg:block w-full h-full bg-cover bg-[#5c6779]bg-blend-overlay bg-center" style="background-image: url('/images/booking/hero-bg-desktop.jpg')"></div>
+        <div class="hidden md:block lg:hidden w-full h-full bg-cover bg-[#5c6779] bg-blend-overlay bg-center" style="background-image: url('/images/booking/hero-bg-tablet.jpg')"></div>
+        <div class="md:hidden w-full h-full bg-cover bg-[#5c6779] bg-blend-overlay bg-center" style="background-image: url('/images/booking/hero-bg-mobile.jpg')"></div>
       </div>
       <div class="relative w-full min-h-[200px] md:min-h-[450px] lg:min-h-[550px]">
         <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
@@ -19,7 +19,7 @@ export function bookingHero() {
             <p class="text-white font-league md:text-[20px] md:leading-[30px] text-[16px] leading-[26px] mb-6">
               We can't wait to host you. If you have any special requirements please feel free to call on the phone number below. We'll be happy to accommodate you.
             </p>
-            <button id="book-table-btn" class="md:hidden border mb-42 md:mb-32 border-white text-[16px] font-league -tracking-1 py-4 px-12 inline-block w-max uppercase hover:bg-white hover:text-black text-white tracking-widest transition duration-300 cursor-pointer">Reserve Place</button>
+            <a href="#" class="md:hidden border mb-42 md:mb-32 border-white text-[16px] font-league -tracking-1 py-4 px-12 inline-block w-max uppercase hover:bg-white hover:text-black text-white tracking-widest transition duration-300 cursor-pointer">Reserve Place</a>
           </div>
         </div>
       </div>

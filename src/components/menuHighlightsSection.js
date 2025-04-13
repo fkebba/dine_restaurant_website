@@ -9,7 +9,7 @@ export function menuHighlights() {
         </div>
         <div class="grid grid-cols-1  max-w-full lg:max-w-md gap-y-2 md:gap-y-8 gap-8">
           <div class="flex flex-col md:flex-row items-center relative text-center md:text-left">
-            <div class="">
+            <div>
              <img src="/images/homepage/salmon-desktop-tablet@2x.jpg" class="relative hidden md:block " />
               <img src="/images/homepage/salmon-mobile.jpg" class="relative md:hidden mb-8 " />
              </div>

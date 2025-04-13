@@ -1,7 +1,7 @@
 export function footerSection() {
   return `
 <footer class="bg-black text-white">
-    <div class="py-16 px-8 bg-cover bg-center bg-gray-700 bg-blend-overlay" style="background-image: url('/images/homepage/ready-bg-desktop.jpg');  ">
+    <div class="py-16 px-8 bg-cover bg-center bg-[#5c6779] bg-blend-overlay" style="background-image: url('/images/homepage/ready-bg-desktop.jpg');  ">
       <div class="max-w-5xl mx-auto flex flex-col lg:flex-row justify-between items-center">
         <h2 class="text-[34px] leading-[38px] tracking-wide md:leading-[48px] font-league md:text-[48px] mb-8 font-bold md:mb-0 text-center lg:text-left">Ready to make a reservation?</h2>
         <a href="/booking.html" class="border md:mt-8 lg:mt-0 border-white text-[16px] px-12 py-4 lg:py-3 lg:px-6 inline-block uppercase tracking-widest font-medium hover:bg-white hover:text-black transition mx-auto md:mx-0 ">Book a table</a>

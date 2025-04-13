@@ -1,10 +1,10 @@
 export function Hero() {
   return `
-  <div class="h-64 md:hidden bg-gray-700 bg-cover bg-blend-overlay" style="background-image: url('/images/homepage/hero-bg-mobile.jpg')"></div>
-  <div class="hidden md:block lg:hidden h-80 bg-gray-700 bg-cover bg-blend-overlay" style="background-image: url('/images/homepage/hero-bg-tablet.jpg')"></div>
+  <div class="h-64 md:hidden bg-[#5c6779] bg-cover bg-blend-overlay" style="background-image: url('/images/homepage/hero-bg-mobile.jpg')"></div>
+  <div class="hidden md:block lg:hidden h-80 bg-[#17192b] bg-cover bg-blend-overlay" style="background-image: url('/images/homepage/hero-bg-tablet.jpg')"></div>
     <div
-    class="relative h-[500px] md:h-[600px] lg:h-[700px] px-4 md:px-8 lg:px-12 py-4 md:py-6 lg:py-10 bg-gray-700 bg-cover bg-blend-overlay lg:bg-[url('/images/homepage/hero-bg-desktop.jpg')]" >
-    <div class="absolute top-0 left-0 w-full lg:w-[510px] bottom-0 bg-black"></div>
+    class="relative h-[500px] md:h-[600px] lg:h-[700px] px-4 md:px-8 lg:px-12 py-4 md:py-6 lg:py-10 bg-[#242b37] bg-cover bg-blend-overlay lg:bg-[url('/images/homepage/hero-bg-desktop.jpg')]" >
+    <div class="absolute top-0 left-0 w-full lg:w-[510px] bottom-0  bg-black"></div>
     <div class="max-w-5xl mx-auto relative lg:mb-24">
       <div class="relative flex justify-center lg:justify-start lg:px-0 ">
         <img src="/images/logo.svg" alt="Logo" class="w-auto h-auto" />
